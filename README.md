@@ -4,4 +4,4 @@
 * Falck, Elise
 * González, César
 * Ngo, Michael
-* Turner, Dennesia
+* Turner, Dennesia D
