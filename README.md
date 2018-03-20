@@ -5,3 +5,5 @@
 * González, César Cristóbal
 * Ngo, Michael
 * Turner, Dennesia D
+* Jones, Kendal
+
