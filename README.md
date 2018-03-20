@@ -2,6 +2,6 @@
 ## Maximizing empathy for special needs users during the architectural design process
 ### Team Members:
 * Falck, Elise
-* González, César Cristóbal
+* González, César
 * Ngo, Michael
-* Turner, Dennesia D
+* Turner, Dennesia
