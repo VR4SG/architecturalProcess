@@ -8,8 +8,9 @@ public class GlassFaceInteraction : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.tag == "Glasses")
+        if (col.gameObject.tag == "Cataracts" || col.gameObject.tag == "Diabetes" || col.gameObject.tag == "Glaucoma" || col.gameObject.tag == "Macular")
         {
+            Glasses = col.gameObject;
             Glasses.SetActive(false);
         }
     }
