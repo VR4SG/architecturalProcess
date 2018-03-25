@@ -11,7 +11,9 @@ public class GlassFaceInteraction : MonoBehaviour {
         if (col.gameObject.tag == "Cataracts" || col.gameObject.tag == "Diabetes" || col.gameObject.tag == "Glaucoma" || col.gameObject.tag == "Macular")
         {
             Glasses = col.gameObject;
-            Glasses.SetActive(false);
+            // Glasses.SetActive(false);
+
+            DestroyObject(col.gameObject);
         }
     }
 
