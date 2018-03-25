@@ -1,28 +1,30 @@
 fileFormatVersion: 2
-guid: 70ffffa1e0bf6f44db4b44a4e36519e5
-timeCreated: 1521780768
+guid: 88d9aa391d387384ea581d13dcd9f1ab
+timeCreated: 1521823477
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Group1
-    100004: Group2
-    100006: Group3
-    100008: Group4
-    100010: Mesh1
-    100012: Mesh2
-    100014: Mesh3
-    100016: Mesh4
+    100002: Door1
+    100004: Door_Frame1
+    100006: Group1
+    100008: Group2
+    100010: Group3
+    100012: Mesh1
+    100014: Mesh2
+    100016: Mesh3
+    100018: Mesh4
     400000: //RootNode
-    400002: Group1
-    400004: Group2
-    400006: Group3
-    400008: Group4
-    400010: Mesh1
-    400012: Mesh2
-    400014: Mesh3
-    400016: Mesh4
+    400002: Door1
+    400004: Door_Frame1
+    400006: Group1
+    400008: Group2
+    400010: Group3
+    400012: Mesh1
+    400014: Mesh2
+    400016: Mesh3
+    400018: Mesh4
     2300000: Mesh1
     2300002: Mesh2
     2300004: Mesh3
