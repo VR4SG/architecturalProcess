@@ -5,15 +5,22 @@ using UnityEngine;
 public class GlassFaceInteraction : MonoBehaviour {
 
     public GameObject Glasses;
+    public GameObject Condition;
 
     void OnTriggerEnter(Collider col)
     {
+        Glasses = col.gameObject;
+
         if (col.gameObject.tag == "Cataracts" || col.gameObject.tag == "Diabetes" || col.gameObject.tag == "Glaucoma" || col.gameObject.tag == "Macular")
         {
-            Glasses = col.gameObject;
-            // Glasses.SetActive(false);
+            //Glasses.SetActive(false);
+            DestroyObject(Glasses);
 
-            DestroyObject(col.gameObject);
+            if(col.gameObject.tag == "Cataracts")
+            {
+                //DestroyObject(Condition);
+                Condition.SetActive(true);
+            }
         }
     }
 
