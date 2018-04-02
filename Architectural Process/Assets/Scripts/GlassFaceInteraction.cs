@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GlassFaceInteraction : MonoBehaviour
-{
+public class GlassFaceInteraction : MonoBehaviour {
 
     public GameObject Glasses;
+    public GameObject Condition;
 
     void OnTriggerEnter(Collider col)
     {
@@ -14,7 +14,11 @@ public class GlassFaceInteraction : MonoBehaviour
         if (col.gameObject.tag == "Cataracts")
         {
             DestroyObject(Glasses);
-            Debug.Log("LINE 19");
+
+            if(col.gameObject.tag == "Cataracts")
+            {
+                Condition.SetActive(true);
+            }
         }
     }
 
