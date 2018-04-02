@@ -9,16 +9,10 @@ public class GlassFaceInteraction : MonoBehaviour {
 
     void OnTriggerEnter(Collider col)
     {
-        Glasses = col.gameObject;
-
         if (col.gameObject.tag == "Cataracts")
         {
             DestroyObject(Glasses);
-
-            if(col.gameObject.tag == "Cataracts")
-            {
-                Condition.SetActive(true);
-            }
+            Condition.SetActive(true);
         }
     }
 
