@@ -6,8 +6,8 @@ public class QuitCondition : MonoBehaviour {
 
     public GameObject Condition;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	

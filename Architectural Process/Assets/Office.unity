@@ -979,7 +979,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400058, guid: 04886e82e2cc2df46abc24dc62046b5e, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400058, guid: 04886e82e2cc2df46abc24dc62046b5e, type: 3}
       propertyPath: m_LocalScale.x
@@ -1399,7 +1399,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400058, guid: 04886e82e2cc2df46abc24dc62046b5e, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400058, guid: 04886e82e2cc2df46abc24dc62046b5e, type: 3}
       propertyPath: m_LocalScale.x
@@ -2619,7 +2619,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400058, guid: 04886e82e2cc2df46abc24dc62046b5e, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 400058, guid: 04886e82e2cc2df46abc24dc62046b5e, type: 3}
       propertyPath: m_LocalScale.x
@@ -3459,7 +3459,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &693885821
 Transform:
   m_ObjectHideFlags: 0
@@ -5093,6 +5093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Condition: {fileID: 698501706}
+  Glasses: {fileID: 589790285}
 --- !u!114 &1113073458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7920,7 +7921,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1679423735
 Transform:
   m_ObjectHideFlags: 0
@@ -8717,6 +8718,34 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300152, guid: e68a0387de2575d4b9a51f7e76c6e5dd, type: 3}
+--- !u!1 &1812116813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1812116814}
+  m_Layer: 0
+  m_Name: Position - Cataracts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1812116814
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1812116813}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2142542635}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1813698298 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100230, guid: e68a0387de2575d4b9a51f7e76c6e5dd, type: 3}
@@ -8907,6 +8936,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Glasses: {fileID: 589790285}
   Condition: {fileID: 698501706}
+  Spawnpoint: {fileID: 1812116814}
 --- !u!1 &1854927533 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100188, guid: 300684a2cf2f8d443891e5087af2e4cc, type: 3}
@@ -10158,6 +10188,7 @@ Transform:
   - {fileID: 59090560}
   - {fileID: 1970606692}
   - {fileID: 589790284}
+  - {fileID: 1812116814}
   - {fileID: 257401884}
   - {fileID: 217753034}
   - {fileID: 543822785}
