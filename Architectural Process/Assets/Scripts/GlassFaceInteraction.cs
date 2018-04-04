@@ -6,19 +6,12 @@ public class GlassFaceInteraction : MonoBehaviour {
 
     public GameObject Glasses;
     public GameObject Condition;
-    public Transform Spawnpoint;
 
-    void OnTriggerEnter(Collider col)
-    {
-        GameObject NewGlasses = Glasses;
-        NewGlasses.SetActive(true);
+    void OnTriggerEnter(Collider col) {
 
-        if (col.gameObject.tag == "Cataracts")
-        {
-            DestroyObject(Glasses.gameObject);
+        if (col.gameObject.tag == "Cataracts") {
+            DestroyObject(Glasses);
             Condition.SetActive(true);
         }
     }
-
-
 }
