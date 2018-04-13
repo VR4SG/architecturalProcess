@@ -8978,7 +8978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Glasses: {fileID: 589790285}
-  Condition: {fileID: 0}
+  Condition: {fileID: 2014957296}
 --- !u!114 &1854799306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8990,7 +8990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5749b1865e4a6748ace0907906831b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Condition: {fileID: 0}
+  Condition: {fileID: 2014957296}
 --- !u!1 &1854927533 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100188, guid: 300684a2cf2f8d443891e5087af2e4cc, type: 3}
@@ -9714,12 +9714,12 @@ GameObject:
   - component: {fileID: 2014957298}
   - component: {fileID: 2014957297}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Canvas - Cataracts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2014957297
 MonoBehaviour:
   m_ObjectHideFlags: 0
