@@ -6,7 +6,7 @@
 ### Team Members:
 * Falck, Elise
 * González, César
+* Jones, Kendal
 * Ngo, Michael
 * Turner, Dennesia
-* Jones, Kendal
 
