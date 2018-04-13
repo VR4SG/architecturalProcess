@@ -6,11 +6,20 @@ public class GlassFaceInteraction : MonoBehaviour {
 
     public GameObject Glasses;
     public GameObject Condition;
+    public Transform RespawnLocation;
+    Vector3 RespawnPosition;
 
-    void OnTriggerEnter(Collider col) {
+    private void Start()
+    {
+        RespawnPosition = new Vector3(RespawnLocation.transform.position.x, RespawnLocation.transform.position.y, RespawnLocation.transform.position.z);
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
 
         if (col.gameObject.tag == "Cataracts") {
-            DestroyObject(Glasses);
+            Glasses.gameObject.transform.position = RespawnPosition;
+            Glasses.gameObject.transform.rotation = Quaternion.Euler(0, 90, 0);
             Condition.SetActive(true);
         }
     }
