@@ -3,6 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuSelection : MonoBehaviour {
 
+    public GameObject Credits;
+    public GameObject InfoBlueCircle;
+
     public void OnLoadStart()
     {
         Debug.Log("START");
@@ -10,12 +13,12 @@ public class MainMenuSelection : MonoBehaviour {
     }
     public void OnLoadMoreInfo()
     {
-        //SceneManager.LoadScene("selection_raw", LoadSceneMode.Single);
+        InfoBlueCircle.SetActive(true);
         Debug.Log("MORE INFO");
     }
     public void OnLoadCredits()
     {
-        //SceneManager.LoadScene("selection_physics", LoadSceneMode.Single);
+        Credits.SetActive(true);
         Debug.Log("CREDITS");
     }
     public void OnLoadQuit()
