@@ -5,8 +5,8 @@ public class MainMenuSelection : MonoBehaviour {
 
     public void OnLoadStart()
     {
-        //SceneManager.LoadScene("selection_ui", LoadSceneMode.Single);
         Debug.Log("START");
+        SceneManager.LoadScene("office", LoadSceneMode.Single);
     }
     public void OnLoadMoreInfo()
     {
