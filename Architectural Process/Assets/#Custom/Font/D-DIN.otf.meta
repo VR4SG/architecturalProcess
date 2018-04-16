@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 2255dfd60e9959848aa467680013c9f0
+timeCreated: 1523856318
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: D-DIN
+  fontNames:
+  - D-DIN
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 117184baf555e3940b1d6bc95c8f898e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

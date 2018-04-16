@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: a195dc48e3dcfc04587c28c1b20f887e
+timeCreated: 1523856318
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Proxima Nova Alt Condensed
+  fontNames:
+  - Proxima Nova Alt Condensed
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
