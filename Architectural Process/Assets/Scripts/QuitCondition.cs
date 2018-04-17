@@ -7,13 +7,13 @@ public class QuitCondition : MonoBehaviour {
     public GameObject Condition;
 
     // Use this for initialization
-    void Start () {
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    void Start ()
+    {    }
+
+    // Update is called once per frame
+    void Update ()
+    {
         if (OVRInput.GetDown(OVRInput.Button.Four)) {
-            Debug.Log("BUTTON FOUR PRESSED");
             Condition.SetActive(false);
         }
     }
