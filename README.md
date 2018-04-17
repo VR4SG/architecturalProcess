@@ -1,7 +1,4 @@
-
-
-# Virtual Reality for Social Good
-## Project Owner: Dr. Jason Meneely
+﻿# Virtual Reality for Social Good
 ## Maximizing empathy for special needs users during the architectural design process
 ### Team Members:
 * Falck, Elise
@@ -9,4 +6,4 @@
 * Jones, Kendal
 * Ngo, Michael
 * Turner, Dennesia
-
+* Jones, Kendals
