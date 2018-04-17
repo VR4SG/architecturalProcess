@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: d2f8bddf08d3b224a9e31e9e0e8d2b96
+timeCreated: 1523856318
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: D-DIN Exp
+  fontNames:
+  - D-DIN Exp
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 9d0beb51af5aaa245b7554f6b1df2399, type: 3}
+  - {fileID: 12800000, guid: 4fba596f01efc9240add623fade1a8d1, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
