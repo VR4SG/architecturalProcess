@@ -33,7 +33,7 @@ public class OVRGrabber : MonoBehaviour
     public float grabEnd = 0.35f;
 
     // Demonstrates parenting the held object to the hand's transform when grabbed.
-    // When false, the grabbed object is moved every FixedUpdate using MovePosition. 
+    // When false, the grabbed object is moved every FixedUpdate using MovePosition.
     // Note that MovePosition is required for proper physics simulation. If you set this to true, you can
     // easily observe broken physics simulation by, for example, moving the bottom cube of a stacked
     // tower and noting a complete loss of friction.
@@ -97,7 +97,7 @@ public class OVRGrabber : MonoBehaviour
 		OVRCameraRig rig = null;
 		if (transform.parent != null && transform.parent.parent != null)
 			rig = transform.parent.parent.GetComponent<OVRCameraRig>();
-		
+
 		if (rig != null)
 		{
 			rig.UpdatedAnchors += (r) => {OnUpdatedAnchors();};
@@ -131,16 +131,18 @@ public class OVRGrabber : MonoBehaviour
 	}
 
     // Hands follow the touch anchors by calling MovePosition each frame to reach the anchor.
-    // This is done instead of parenting to achieve workable physics. If you don't require physics on 
+    // This is done instead of parenting to achieve workable physics. If you don't require physics on
     // your hands or held objects, you may wish to switch to parenting.
     void OnUpdatedAnchors()
     {
-        Vector3 handPos = OVRInput.GetLocalControllerPosition(m_controller);
-        Quaternion handRot = OVRInput.GetLocalControllerRotation(m_controller);
-        Vector3 destPos = m_parentTransform.TransformPoint(m_anchorOffsetPosition + handPos);
-        Quaternion destRot = m_parentTransform.rotation * handRot * m_anchorOffsetRotation;
-        GetComponent<Rigidbody>().MovePosition(destPos);
-        GetComponent<Rigidbody>().MoveRotation(destRot);
+		Vector3 destPos = transform.position;
+		Quaternion destRot = transform.rotation;
+        // Vector3 handPos = OVRInput.GetLocalControllerPosition(m_controller);
+        // Quaternion handRot = OVRInput.GetLocalControllerRotation(m_controller);
+        // Vector3 destPos = m_parentTransform.TransformPoint(m_anchorOffsetPosition + handPos);
+        // Quaternion destRot = m_parentTransform.rotation * handRot * m_anchorOffsetRotation;
+        // GetComponent<Rigidbody>().MovePosition(destPos);
+        // GetComponent<Rigidbody>().MoveRotation(destRot);
 
         if (!m_parentHeldObject)
         {
