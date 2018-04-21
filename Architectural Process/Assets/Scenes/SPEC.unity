@@ -60753,7 +60753,7 @@ GameObject:
   - component: {fileID: 1215001309}
   - component: {fileID: 1215001308}
   m_Layer: 0
-  m_Name: OVRPlayerController (1)
+  m_Name: OVRPlayerController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60840,7 +60840,7 @@ Transform:
   - {fileID: 85378889}
   - {fileID: 190432212}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1215498449
 GameObject:
@@ -81782,7 +81782,7 @@ Transform:
   - {fileID: 309757166}
   - {fileID: 1978571067}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1630378515
 Prefab:
