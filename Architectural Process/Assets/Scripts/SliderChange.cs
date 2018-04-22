@@ -18,7 +18,7 @@ public class SliderChange : MonoBehaviour {
 
     private void Start()
     {
-        stage = 9;
+        stage = 1;
     }
 
     // Update is called once per frame
