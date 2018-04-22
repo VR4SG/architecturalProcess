@@ -18,7 +18,7 @@ public class MainMenuSelection : MonoBehaviour {
         Debug.Log("START");
         SceneManager.LoadScene("office", LoadSceneMode.Single);
     }
-    public void OnLoadMoreInfo()
+    public void OnLoadLearnMore()
     {
         BlueCircleLearnMore.SetActive(true);
         BlueCircleMainMenu.SetActive(false);
