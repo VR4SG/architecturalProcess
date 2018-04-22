@@ -14,7 +14,7 @@ Shader "UI/Blur/UIBlurHQ" {
   Properties {
     _TintColor ("Tint Color", Color) = (1, 1, 1, 0.2)
     _Size ("Spacing", Range(0, 20)) = 5.0
-    _Vibrancy ("Vibrancy", Range(0, 2)) = 0.2
+    _Vibrancy ("Vibrancy", Range(0, 20)) = 0.2
     _MainTex ("Texture", 2D) = "white" {}
 
     [HideInInspector]
