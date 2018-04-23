@@ -139,6 +139,7 @@ PlayerSettings:
   applicationIdentifier:
     Standalone: uctNamepany.ProductName
     Tizen: com.oculus.UnitySample
+    iOS: com.oculus.UnitySample
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 16
@@ -237,6 +238,9 @@ PlayerSettings:
     m_Devices:
     - Oculus
   - m_BuildTarget: Tizen
+    m_Enabled: 1
+    m_Devices: []
+  - m_BuildTarget: iOS
     m_Enabled: 1
     m_Devices: []
   openGLRequireES31: 0
