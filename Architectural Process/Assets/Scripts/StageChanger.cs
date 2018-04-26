@@ -29,7 +29,6 @@ public class StageChanger : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        Debug.Log("INITIAL STAGE: " + stage);
 
         stageText.text = stage.ToString();
 
@@ -37,21 +36,22 @@ public class StageChanger : MonoBehaviour {
         {
             stage++;
             sliderPanel.SetActive(true);
-            Debug.Log("STAGE CHANGE: " + stage);
+
+            StartCoroutine(DisablePanel(5, sliderPanel));
         }
 
         if ((OVRInput.GetDown(OVRInput.Button.One)) && (stage > 1))
         {
             stage--;
             sliderPanel.SetActive(true);
-            Debug.Log("STAGE CHANGE: " + stage);
+
+            StartCoroutine(DisablePanel(5, sliderPanel));
         }
 
-        /*if (OVRInput.GetDown(OVRInput.Button.Four))
+        if (OVRInput.GetDown(OVRInput.Button.Four))
         {
-            stage = 1;
-
-        }*/
+            Debug.Log("OVR INPUT BUTTON FOUR");
+        }
 
         if (stage == 1)
         {
@@ -192,5 +192,12 @@ public class StageChanger : MonoBehaviour {
             stage9.SetActive(false);
             stage10.SetActive(true);
         }
+    }
+
+    IEnumerator DisablePanel(int seconds, GameObject panel)
+    {
+        Debug.Log("INSIDE OF DISABLE PANEL FUNCTION");
+        yield return new WaitForSeconds(seconds);
+        panel.SetActive(false);
     }
 }
