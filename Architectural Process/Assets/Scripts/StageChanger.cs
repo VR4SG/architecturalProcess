@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SliderChange : MonoBehaviour {
+public class StageChanger : MonoBehaviour {
 
     public GameObject stage1;
     public GameObject stage2;
@@ -17,30 +17,40 @@ public class SliderChange : MonoBehaviour {
     public GameObject stage10;
     int stage;
 
-    public Slider stageSlider;
+    public Text stageText;
+    public GameObject sliderPanel;
+    public GameObject condition;
 
     private void Start()
     {
         stage = 1;
-        stageSlider.value = stage;
+        stageText.text = "Severity Level: " + stage.ToString();
     }
 
     // Update is called once per frame
     void Update () {
         Debug.Log("INITIAL STAGE: " + stage);
 
+        stageText.text = stage.ToString();
+
         if ((OVRInput.GetDown(OVRInput.Button.Two)) && (stage < 10))
         {
             stage++;
-            stageSlider.value = stage;
+            sliderPanel.SetActive(true);
             Debug.Log("STAGE CHANGE: " + stage);
         }
 
         if ((OVRInput.GetDown(OVRInput.Button.One)) && (stage > 1))
         {
             stage--;
-            stageSlider.value = stage;
+            sliderPanel.SetActive(true);
             Debug.Log("STAGE CHANGE: " + stage);
+        }
+
+        if (OVRInput.GetDown(OVRInput.Button.Four))
+        {
+            stage = 1;
+
         }
 
         if (stage == 1)
@@ -55,8 +65,6 @@ public class SliderChange : MonoBehaviour {
             stage8.SetActive(false);
             stage9.SetActive(false);
             stage10.SetActive(false);
-
-            changeStage(stage);
         }
 
         if (stage == 2)
@@ -71,8 +79,6 @@ public class SliderChange : MonoBehaviour {
             stage8.SetActive(false);
             stage9.SetActive(false);
             stage10.SetActive(false);
-
-            changeStage(stage);
         }
 
         if (stage == 3)
@@ -87,8 +93,6 @@ public class SliderChange : MonoBehaviour {
             stage8.SetActive(false);
             stage9.SetActive(false);
             stage10.SetActive(false);
-
-            changeStage(stage);
         }
 
         if (stage == 4)
@@ -103,8 +107,6 @@ public class SliderChange : MonoBehaviour {
             stage8.SetActive(false);
             stage9.SetActive(false);
             stage10.SetActive(false);
-
-            changeStage(stage);
         }
 
         if (stage == 5)
@@ -119,8 +121,6 @@ public class SliderChange : MonoBehaviour {
             stage8.SetActive(false);
             stage9.SetActive(false);
             stage10.SetActive(false);
-
-            changeStage(stage);
         }
 
         if (stage == 6)
@@ -135,8 +135,6 @@ public class SliderChange : MonoBehaviour {
             stage8.SetActive(false);
             stage9.SetActive(false);
             stage10.SetActive(false);
-
-            changeStage(stage);
         }
 
         if (stage == 7)
@@ -151,8 +149,6 @@ public class SliderChange : MonoBehaviour {
             stage8.SetActive(false);
             stage9.SetActive(false);
             stage10.SetActive(false);
-
-            changeStage(stage);
         }
 
         if (stage == 8)
@@ -167,8 +163,6 @@ public class SliderChange : MonoBehaviour {
             stage8.SetActive(true);
             stage9.SetActive(false);
             stage10.SetActive(false);
-
-            changeStage(stage);
         }
 
         if (stage == 9)
@@ -183,8 +177,6 @@ public class SliderChange : MonoBehaviour {
             stage8.SetActive(false);
             stage9.SetActive(true);
             stage10.SetActive(false);
-
-            changeStage(stage);
         }
 
         if (stage == 10)
@@ -199,24 +191,6 @@ public class SliderChange : MonoBehaviour {
             stage8.SetActive(false);
             stage9.SetActive(false);
             stage10.SetActive(true);
-
-            changeStage(stage);
-        }
-
-    }
-
-    void changeStage(int stage)
-    {
-        if ((OVRInput.GetDown(OVRInput.Button.Two)))
-        {
-            stage++;
-            Debug.Log("STAGE CHANGE: " + stage);
-        }
-
-        if ((OVRInput.GetDown(OVRInput.Button.One)))
-        {
-            stage--;
-            Debug.Log("STAGE CHANGE: " + stage);
         }
     }
 }
