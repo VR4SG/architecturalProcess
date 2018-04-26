@@ -47,11 +47,11 @@ public class StageChanger : MonoBehaviour {
             Debug.Log("STAGE CHANGE: " + stage);
         }
 
-        if (OVRInput.GetDown(OVRInput.Button.Four))
+        /*if (OVRInput.GetDown(OVRInput.Button.Four))
         {
             stage = 1;
 
-        }
+        }*/
 
         if (stage == 1)
         {
