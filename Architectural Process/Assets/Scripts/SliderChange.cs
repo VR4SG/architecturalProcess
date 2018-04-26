@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SliderChange : MonoBehaviour {
 
@@ -16,9 +17,12 @@ public class SliderChange : MonoBehaviour {
     public GameObject stage10;
     int stage;
 
+    public Slider stageSlider;
+
     private void Start()
     {
         stage = 1;
+        stageSlider.value = stage;
     }
 
     // Update is called once per frame
@@ -28,12 +32,14 @@ public class SliderChange : MonoBehaviour {
         if ((OVRInput.GetDown(OVRInput.Button.Two)) && (stage < 10))
         {
             stage++;
+            stageSlider.value = stage;
             Debug.Log("STAGE CHANGE: " + stage);
         }
 
         if ((OVRInput.GetDown(OVRInput.Button.One)) && (stage > 1))
         {
             stage--;
+            stageSlider.value = stage;
             Debug.Log("STAGE CHANGE: " + stage);
         }
 
