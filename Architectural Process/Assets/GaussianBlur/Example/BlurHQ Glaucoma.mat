@@ -28,7 +28,7 @@ Material:
     - _StencilOp: 0
     - _StencilReadMask: 255
     - _StencilWriteMask: 255
-    - _Vibrancy: 15
+    - _Vibrancy: 2.1
     m_Colors:
     - _ColorMask: {r: 1, g: 1, b: 1, a: 0.2}
     - _TintColor: {r: 1, g: 1, b: 1, a: 0}
