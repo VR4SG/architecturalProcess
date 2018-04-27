@@ -9,6 +9,7 @@ TagManager:
   - Diabetes
   - Glaucoma
   - Macular
+  - Room2
   layers:
   - Default
   - TransparentFX
