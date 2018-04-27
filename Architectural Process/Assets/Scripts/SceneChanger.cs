@@ -9,7 +9,7 @@ public class SceneChanger : MonoBehaviour {
 		if (col.gameObject.tag == "Room2")
         {
             Debug.Log("CHANGE INTO SPEC STORE");
-            SceneManager.LoadScene("SPEC", LoadSceneMode.Single);
+            SceneManager.LoadScene("Room2", LoadSceneMode.Single);
         }
 	}
 }
