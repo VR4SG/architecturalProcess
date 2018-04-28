@@ -4,13 +4,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Controls : MonoBehaviour {
+
+    public GameObject quickFilter;
 	
-	// Update is called once per frame
+    // Update is called once per frame
 	void Update ()
     {
         if (OVRInput.GetDown(OVRInput.Button.Three))
         {
-            SceneManager.LoadScene("ControllerRoom", LoadSceneMode.Single);
+            quickFilter.SetActive(!quickFilter.activeSelf);
         }
 
         if (OVRInput.GetDown(OVRInput.Button.Start))
