@@ -742,6 +742,7 @@ GameObject:
   - component: {fileID: 108434380}
   - component: {fileID: 108434379}
   - component: {fileID: 108434378}
+  - component: {fileID: 108434381}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -835,6 +836,25 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 108434376}
+--- !u!114 &108434381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 108434376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e3be7832294e744880dfc7adb5d0f27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 0, y: 0}
+  m_UseGraphicAlpha: 1
+  m_size: 2
+  glintEffect: 0
+  glintVertex: 0
+  glintWidth: 0
+  glintColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &115109749
 GameObject:
   m_ObjectHideFlags: 0
@@ -6762,6 +6782,7 @@ GameObject:
   - component: {fileID: 708939714}
   - component: {fileID: 708939713}
   - component: {fileID: 708939712}
+  - component: {fileID: 708939715}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -6853,6 +6874,25 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 708939710}
+--- !u!114 &708939715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 708939710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e3be7832294e744880dfc7adb5d0f27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 0, y: 0}
+  m_UseGraphicAlpha: 1
+  m_size: 2
+  glintEffect: 0
+  glintVertex: 0
+  glintWidth: 0
+  glintColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &710062004 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100340, guid: e68a0387de2575d4b9a51f7e76c6e5dd, type: 3}
@@ -12522,6 +12562,7 @@ GameObject:
   - component: {fileID: 1373367632}
   - component: {fileID: 1373367631}
   - component: {fileID: 1373367633}
+  - component: {fileID: 1373367634}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -12613,6 +12654,25 @@ MonoBehaviour:
     g: 0
     b: 0
     a: 0
+--- !u!114 &1373367634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1373367629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e3be7832294e744880dfc7adb5d0f27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 0, y: 0}
+  m_UseGraphicAlpha: 1
+  m_size: 2
+  glintEffect: 0
+  glintVertex: 0
+  glintWidth: 0
+  glintColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1377874064 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 04886e82e2cc2df46abc24dc62046b5e, type: 3}
@@ -14767,6 +14827,7 @@ GameObject:
   - component: {fileID: 1590874384}
   - component: {fileID: 1590874383}
   - component: {fileID: 1590874382}
+  - component: {fileID: 1590874385}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -14860,6 +14921,25 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1590874380}
+--- !u!114 &1590874385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1590874380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e3be7832294e744880dfc7adb5d0f27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 0, y: 0}
+  m_UseGraphicAlpha: 1
+  m_size: 2
+  glintEffect: 0
+  glintVertex: 0
+  glintWidth: 0
+  glintColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1591026570 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100316, guid: e68a0387de2575d4b9a51f7e76c6e5dd, type: 3}
@@ -17244,8 +17324,8 @@ GameObject:
   - component: {fileID: 1854799308}
   - component: {fileID: 1854799309}
   - component: {fileID: 1854799307}
-  - component: {fileID: 1854799311}
   - component: {fileID: 1854799310}
+  - component: {fileID: 1854799311}
   m_Layer: 0
   m_Name: CenterEyeAnchor
   m_TagString: MainCamera
@@ -17433,10 +17513,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1854799299}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c19da522f3278049afbb051f56d0200, type: 3}
+  m_Script: {fileID: 11500000, guid: 7736ebe38f1f694489cad34fa881c5d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num: 1
+  cataracts: {fileID: 2014957296}
+  diabetes: {fileID: 1004420259}
+  glaucoma: {fileID: 727229344}
+  macular: {fileID: 896806955}
 --- !u!1 &1854927533 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100188, guid: 300684a2cf2f8d443891e5087af2e4cc, type: 3}
@@ -18218,7 +18301,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1942191620
 RectTransform:
   m_ObjectHideFlags: 0
