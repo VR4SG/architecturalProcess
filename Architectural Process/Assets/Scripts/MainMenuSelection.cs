@@ -15,25 +15,34 @@ public class MainMenuSelection : MonoBehaviour {
 
     public void OnLoadStart()
     {
-        Debug.Log("START");
-        SceneManager.LoadScene("office", LoadSceneMode.Single);
+        SceneManager.LoadScene("ControllerRoom", LoadSceneMode.Single);
     }
+
+    public void OnLoadContinue()
+    {
+        SceneManager.LoadScene("Office", LoadSceneMode.Single);
+    }
+
+    public void OnLoadMainMenu()
+    {
+        SceneManager.LoadScene("Menu", LoadSceneMode.Single);
+    }
+
     public void OnLoadLearnMore()
     {
         BlueCircleLearnMore.SetActive(true);
         BlueCircleMainMenu.SetActive(false);
-        Debug.Log("MORE INFO");
     }
+
     public void OnLoadCredits()
     {
         RedSquareCredits.SetActive(true);
         RedSquareMainMenu.SetActive(false);
-        Debug.Log("CREDITS");
     }
+
     public void OnLoadQuit()
     {
         //SceneManager.LoadScene("selection_all", LoadSceneMode.Single);
-        Debug.Log("QUIT");
     }
 
     public void OnLoadCataracts()

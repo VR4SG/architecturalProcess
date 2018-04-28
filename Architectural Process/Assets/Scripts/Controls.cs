@@ -4,22 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Controls : MonoBehaviour {
-
-    public GameObject Panel;
 	
 	// Update is called once per frame
 	void Update ()
     {
         if (OVRInput.GetDown(OVRInput.Button.Three))
         {
-            if (Panel.activeSelf) {
-                Panel.SetActive(false);
-            }
-
-            else
-            {
-                Panel.SetActive(true);
-            }
+            SceneManager.LoadScene("ControllerRoom", LoadSceneMode.Single);
         }
 
         if (OVRInput.GetDown(OVRInput.Button.Start))
