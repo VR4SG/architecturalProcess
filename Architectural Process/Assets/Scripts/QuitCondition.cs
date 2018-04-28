@@ -6,12 +6,6 @@ public class QuitCondition : MonoBehaviour {
 
     public GameObject Condition;
 
-    // Use this for initialization
-    void Start ()
-    {
-
-    }
-
     // Update is called once per frame
     void Update ()
     {
