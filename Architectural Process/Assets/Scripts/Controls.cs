@@ -3,19 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Controls : MonoBehaviour {
-	
-	// Update is called once per frame
-	void Update ()
+public class Controls : MonoBehaviour
+{
+
+    public GameObject HUD;
+
+    // Update is called once per frame
+    void Update()
     {
-        if (OVRInput.GetDown(OVRInput.Button.Three))
+        if (OVRInput.GetDown(OVRInput.Button.One))
         {
-            SceneManager.LoadScene("ControllerRoom", LoadSceneMode.Single);
+            HUD.SetActive(!HUD.activeSelf);
         }
 
         if (OVRInput.GetDown(OVRInput.Button.Start))
         {
-            SceneManager.LoadScene("menu", LoadSceneMode.Single);
+            //SceneManager.LoadScene("menu", LoadSceneMode.Single);
+            Debug.Log("TO BE DETERMINED");
         }
     }
 }

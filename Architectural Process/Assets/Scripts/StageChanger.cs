@@ -18,7 +18,7 @@ public class StageChanger : MonoBehaviour {
     int stage;
 
     public Text stageText;
-    public GameObject sliderPanel;
+    //public GameObject sliderPanel;
     public GameObject condition;
 
     private void Start()
@@ -32,25 +32,20 @@ public class StageChanger : MonoBehaviour {
 
         stageText.text = stage.ToString();
 
-        if ((OVRInput.GetDown(OVRInput.Button.Two)) && (stage < 10))
+        if ((OVRInput.GetDown(OVRInput.Button.Four)) && (stage < 10))
         {
             stage++;
-            sliderPanel.SetActive(true);
+            //sliderPanel.SetActive(true);
 
             /*StartCoroutine(DisablePanel(5, sliderPanel));*/
         }
 
-        if ((OVRInput.GetDown(OVRInput.Button.One)) && (stage > 1))
+        if ((OVRInput.GetDown(OVRInput.Button.Three)) && (stage > 1))
         {
             stage--;
-            sliderPanel.SetActive(true);
+            //sliderPanel.SetActive(true);
 
             /*StartCoroutine(DisablePanel(5, sliderPanel));*/
-        }
-
-        if (OVRInput.GetDown(OVRInput.Button.Four))
-        {
-            Debug.Log("OVR INPUT BUTTON FOUR");
         }
 
         if (stage == 1)

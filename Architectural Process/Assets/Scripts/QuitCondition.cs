@@ -9,8 +9,8 @@ public class QuitCondition : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
-        if (OVRInput.GetDown(OVRInput.Button.Four)) {
+        /*if (OVRInput.GetDown(OVRInput.Button.Four)) {
             Condition.SetActive(false);
-        }
+        }*/
     }
 }
