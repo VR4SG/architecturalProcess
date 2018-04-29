@@ -6,10 +6,19 @@ using UnityEngine.SceneManagement;
 public class SceneChanger : MonoBehaviour {
 
 	void OnTriggerEnter (Collider col) {
-		if (col.gameObject.tag == "Room2")
+		if (col.gameObject.tag == "Room1")
         {
-            Debug.Log("CHANGE INTO SPEC STORE");
+            SceneManager.LoadScene("Room1", LoadSceneMode.Single);
+        }
+
+        if (col.gameObject.tag == "Room2")
+        {
             SceneManager.LoadScene("Room2", LoadSceneMode.Single);
         }
-	}
+
+        if (col.gameObject.tag == "Room3")
+        {
+            SceneManager.LoadScene("Room3", LoadSceneMode.Single);
+        }
+    }
 }

@@ -15,23 +15,29 @@ public class QuickFilters : MonoBehaviour {
     public GameObject glaucomaUnselected;
     public GameObject macularUnselected;
 
+    public GameObject HUD;
+
     int num = 0;
 
     // Update is called once per frame
     void Update () {
-        if ((OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) > 0.9) && (num > 0))
-        {
-            num--;
-            Debug.Log(num);
-        }
 
-        if ((OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0.9) && (num < 4))
+        if (HUD.activeSelf)
         {
-            num++;
-            Debug.Log(num);
-        }
+            if ((OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) > 0.9) && (num > 0))
+            {
+                num--;
+                Debug.Log(num);
+            }
 
-        DetermineCondition(num);
+            if ((OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0.9) && (num < 4))
+            {
+                num++;
+                Debug.Log(num);
+            }
+
+            DetermineCondition(num);
+        }        
     }
 
     void DetermineCondition(int number)

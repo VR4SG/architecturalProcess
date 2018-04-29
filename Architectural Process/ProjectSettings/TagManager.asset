@@ -10,6 +10,8 @@ TagManager:
   - Glaucoma
   - Macular
   - Room2
+  - Room3
+  - Room1
   layers:
   - Default
   - TransparentFX

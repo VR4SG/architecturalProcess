@@ -18,7 +18,6 @@ public class StageChanger : MonoBehaviour {
     int stage;
 
     public Text stageText;
-    //public GameObject sliderPanel;
     public GameObject condition;
 
     private void Start()
@@ -35,17 +34,11 @@ public class StageChanger : MonoBehaviour {
         if ((OVRInput.GetDown(OVRInput.Button.Four)) && (stage < 10))
         {
             stage++;
-            //sliderPanel.SetActive(true);
-
-            /*StartCoroutine(DisablePanel(5, sliderPanel));*/
         }
 
         if ((OVRInput.GetDown(OVRInput.Button.Three)) && (stage > 1))
         {
             stage--;
-            //sliderPanel.SetActive(true);
-
-            /*StartCoroutine(DisablePanel(5, sliderPanel));*/
         }
 
         if (stage == 1)
@@ -188,11 +181,4 @@ public class StageChanger : MonoBehaviour {
             stage10.SetActive(true);
         }
     }
-
-    /*IEnumerator DisablePanel(int seconds, GameObject panel)
-    {
-        Debug.Log("INSIDE OF DISABLE PANEL FUNCTION");
-        yield return new WaitForSeconds(seconds);
-        panel.SetActive(false);
-    }*/
 }
