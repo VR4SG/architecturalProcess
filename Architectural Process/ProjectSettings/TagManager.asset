@@ -12,6 +12,7 @@ TagManager:
   - Room2
   - Room3
   - Room1
+  - Pear
   layers:
   - Default
   - TransparentFX
