@@ -13,6 +13,10 @@ TagManager:
   - Room3
   - Room1
   - Pear
+  - Boundary
+  - Basketball
+  - Ring
+  - Exit
   layers:
   - Default
   - TransparentFX
