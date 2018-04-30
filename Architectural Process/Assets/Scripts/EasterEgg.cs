@@ -9,7 +9,7 @@ public class EasterEgg : MonoBehaviour {
 	void OnTriggerEnter (Collider col) {
 		if(col.gameObject.tag == "Pear")
         {
-            // SceneManager.LoadScene("", LoadSceneMode.Single);
+            SceneManager.LoadScene("Basketball", LoadSceneMode.Single);
             Debug.Log("EASTER EGG!");
         }
 	}
