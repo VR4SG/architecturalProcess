@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boundary : MonoBehaviour {
+public class RespawnBasketball : MonoBehaviour {
 
     // BASKETBALL
     public GameObject basketball;
@@ -15,8 +15,11 @@ public class Boundary : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void OnTriggerEnter (Collider col) {
-        if (col.gameObject.tag == "Basketball")
+    void Update () {
+
+        basketballRespawn = new Vector3(location.transform.position.x, location.transform.position.y, location.transform.position.z);
+
+        if (OVRInput.GetDown(OVRInput.Button.Two))
         {
             basketball.gameObject.transform.position = basketballRespawn;
         }
