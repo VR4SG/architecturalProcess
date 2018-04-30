@@ -24,13 +24,13 @@ public class QuickFilters : MonoBehaviour {
 
         if (HUD.activeSelf)
         {
-            if ((OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger) > 0.9) && (num > 0))
+            if ((OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger)) && (num > 0))
             {
                 num--;
                 Debug.Log(num);
             }
 
-            if ((OVRInput.Get(OVRInput.Axis1D.SecondaryIndexTrigger) > 0.9) && (num < 4))
+            if ((OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger)) && (num < 4))
             {
                 num++;
                 Debug.Log(num);
