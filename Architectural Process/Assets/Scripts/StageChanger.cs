@@ -23,7 +23,6 @@ public class StageChanger : MonoBehaviour {
     private void Start()
     {
         stage = 1;
-        stageText.text = "Severity Level: " + stage.ToString();
     }
 
     // Update is called once per frame

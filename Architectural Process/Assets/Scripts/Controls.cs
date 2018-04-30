@@ -19,7 +19,6 @@ public class Controls : MonoBehaviour
         if (OVRInput.GetDown(OVRInput.Button.Start))
         {
             //SceneManager.LoadScene("menu", LoadSceneMode.Single);
-            Debug.Log("TO BE DETERMINED");
         }
     }
 }

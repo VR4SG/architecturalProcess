@@ -54,8 +54,6 @@ public class QuickFilters : MonoBehaviour {
             diabetesUnselected.SetActive(true);
             glaucomaUnselected.SetActive(true);
             macularUnselected.SetActive(true);
-
-            Debug.Log(number + ": NORMAL");
         }
 
         if(number == 1)
@@ -70,8 +68,6 @@ public class QuickFilters : MonoBehaviour {
             diabetesUnselected.SetActive(true);
             glaucomaUnselected.SetActive(true);
             macularUnselected.SetActive(true);
-
-            Debug.Log(number + ": CATARACTS");
         }
 
         if (number == 2)
@@ -86,8 +82,6 @@ public class QuickFilters : MonoBehaviour {
             diabetesUnselected.SetActive(false);
             glaucomaUnselected.SetActive(true);
             macularUnselected.SetActive(true);
-
-            Debug.Log(number + ": DIABETES");
         }
 
         if (number == 3)
@@ -102,8 +96,6 @@ public class QuickFilters : MonoBehaviour {
             diabetesUnselected.SetActive(true);
             glaucomaUnselected.SetActive(false);
             macularUnselected.SetActive(true);
-
-            Debug.Log(number + ": GLAUCOMA");
         }
 
         if (number == 4)
@@ -118,8 +110,6 @@ public class QuickFilters : MonoBehaviour {
             diabetesUnselected.SetActive(true);
             glaucomaUnselected.SetActive(true);
             macularUnselected.SetActive(false);
-
-            Debug.Log(number + ": MACULAR");
         }
     }
 }
