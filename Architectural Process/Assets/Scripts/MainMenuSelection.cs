@@ -42,7 +42,8 @@ public class MainMenuSelection : MonoBehaviour {
 
     public void OnLoadQuit()
     {
-        //SceneManager.LoadScene("selection_all", LoadSceneMode.Single);
+        Debug.Log("QUIT");
+        Application.Quit();
     }
 
     public void OnLoadCataracts()
