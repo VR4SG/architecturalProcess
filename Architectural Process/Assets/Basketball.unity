@@ -139,7 +139,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: b1661d55f4375f34cabd9260c2b463c9, type: 2}
+  - {fileID: 2100000, guid: 340f45058fc80684da10cd455f86263e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -268,10 +268,76 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 4.1, z: -0.6}
   m_LocalScale: {x: 0.10000012, y: 10, z: 8.300004}
-  m_Children: []
+  m_Children:
+  - {fileID: 94284959}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!1 &94284958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 94284959}
+  - component: {fileID: 94284960}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &94284959
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 94284958}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 55868360}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &94284960
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 94284958}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 50
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &97837674 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100010, guid: eeabdab82731b774cba9a08b73cecdb1, type: 3}
@@ -563,7 +629,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: b1661d55f4375f34cabd9260c2b463c9, type: 2}
+  - {fileID: 2100000, guid: 340f45058fc80684da10cd455f86263e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1621,7 +1687,7 @@ CharacterController:
   m_Height: 1.75
   m_Radius: 0.25
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0.05
   m_SkinWidth: 0.01
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
@@ -2474,7 +2540,6 @@ GameObject:
   - component: {fileID: 576604129}
   - component: {fileID: 576604128}
   - component: {fileID: 576604127}
-  - component: {fileID: 576604132}
   m_Layer: 0
   m_Name: Walls
   m_TagString: Boundary
@@ -2495,7 +2560,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: b1661d55f4375f34cabd9260c2b463c9, type: 2}
+  - {fileID: 2100000, guid: 340f45058fc80684da10cd455f86263e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2546,19 +2611,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &576604132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 576604126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f2da9f1663f48f4bae4030ba2670fbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  basketball: {fileID: 0}
-  location: {fileID: 0}
 --- !u!1 &577960306
 GameObject:
   m_ObjectHideFlags: 0
@@ -4677,7 +4729,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: eeabdab82731b774cba9a08b73cecdb1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.01
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: eeabdab82731b774cba9a08b73cecdb1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4709,7 +4761,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: eeabdab82731b774cba9a08b73cecdb1, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.01
+      value: 0.0125
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: eeabdab82731b774cba9a08b73cecdb1, type: 3}
       propertyPath: m_LocalScale.z
@@ -5454,7 +5506,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: b1661d55f4375f34cabd9260c2b463c9, type: 2}
+  - {fileID: 2100000, guid: 340f45058fc80684da10cd455f86263e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
