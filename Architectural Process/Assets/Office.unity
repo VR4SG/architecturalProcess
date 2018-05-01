@@ -19402,6 +19402,7 @@ MonoBehaviour:
   glaucomaUnselected: {fileID: 693496421}
   macularUnselected: {fileID: 53248088}
   HUD: {fileID: 1474798331}
+  stageText: {fileID: 848854522}
 --- !u!1 &1854927533 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100188, guid: 300684a2cf2f8d443891e5087af2e4cc, type: 3}

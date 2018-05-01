@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuickFilters : MonoBehaviour {
 
@@ -16,6 +17,7 @@ public class QuickFilters : MonoBehaviour {
     public GameObject macularUnselected;
 
     public GameObject HUD;
+    public Text stageText;
 
     int num = 0;
 
@@ -27,13 +29,11 @@ public class QuickFilters : MonoBehaviour {
             if ((OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger)) && (num > 0))
             {
                 num--;
-                Debug.Log(num);
             }
 
             if ((OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger)) && (num < 4))
             {
                 num++;
-                Debug.Log(num);
             }
 
             DetermineCondition(num);
@@ -55,7 +55,7 @@ public class QuickFilters : MonoBehaviour {
             glaucomaUnselected.SetActive(true);
             macularUnselected.SetActive(true);
 
-            Debug.Log(number + ": NORMAL");
+            stageText.text = "0";
         }
 
         if(number == 1)
@@ -70,8 +70,6 @@ public class QuickFilters : MonoBehaviour {
             diabetesUnselected.SetActive(true);
             glaucomaUnselected.SetActive(true);
             macularUnselected.SetActive(true);
-
-            Debug.Log(number + ": CATARACTS");
         }
 
         if (number == 2)
@@ -86,8 +84,6 @@ public class QuickFilters : MonoBehaviour {
             diabetesUnselected.SetActive(false);
             glaucomaUnselected.SetActive(true);
             macularUnselected.SetActive(true);
-
-            Debug.Log(number + ": DIABETES");
         }
 
         if (number == 3)
@@ -102,8 +98,6 @@ public class QuickFilters : MonoBehaviour {
             diabetesUnselected.SetActive(true);
             glaucomaUnselected.SetActive(false);
             macularUnselected.SetActive(true);
-
-            Debug.Log(number + ": GLAUCOMA");
         }
 
         if (number == 4)
@@ -118,8 +112,6 @@ public class QuickFilters : MonoBehaviour {
             diabetesUnselected.SetActive(true);
             glaucomaUnselected.SetActive(true);
             macularUnselected.SetActive(false);
-
-            Debug.Log(number + ": MACULAR");
         }
     }
 }
