@@ -11069,7 +11069,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 530300680}
-  - {fileID: 1847061177}
   m_Father: {fileID: 1113073461}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11311,12 +11310,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0950df82e7936c84983497630bde5b54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Acceleration: 0.1
+  Acceleration: 0.075
   Damping: 0.3
   BackAndSideDampen: 0.5
   JumpForce: 0.3
-  RotationAmount: 1.5
-  RotationRatchet: 45
+  RotationAmount: 1
+  RotationRatchet: 360
   HmdResetsY: 1
   HmdRotatesY: 1
   GravityModifier: 1
@@ -11351,6 +11350,7 @@ Transform:
   m_Children:
   - {fileID: 1078545550}
   - {fileID: 1093386895}
+  - {fileID: 1847061177}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -19159,12 +19159,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1847061176}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0}
   m_LocalPosition: {x: 0, y: -0.875, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.001, z: 0.6}
+  m_LocalScale: {x: 0.5, y: 0.001, z: 0.5}
   m_Children: []
-  m_Father: {fileID: 1093386895}
-  m_RootOrder: 1
+  m_Father: {fileID: 1113073461}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!23 &1847061178
 MeshRenderer:
